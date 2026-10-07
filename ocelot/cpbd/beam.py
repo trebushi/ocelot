@@ -2564,7 +2564,7 @@ def generate_beam(E, I=5000, l_beam=3e-6, **kwargs):
         beam.peakposition = kwargs['peakposition']
 
     if 'window_autoshift' in kwargs:
-        if 'window_autoshift' = 1:
+        if kwargs['window_autoshift']:
             if beam.shape in ['gaussian', 'gauss', 'g']:
                 beam.peakposition = l_beam * 3
             elif beam.shape in ['flattop', 'ft']:
